@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+const API_URL = import.meta.env.VITE_API_URL;
 const EmailEnquiry = ({ product }) => {
 
 const [name,setName] = useState("");
@@ -10,21 +10,18 @@ const handleSend = async () => {
 
 try{
 
-const res = await fetch("http://localhost:5000/api/contact/send-email",{
 
-method:"POST",
-
-headers:{
-"Content-Type":"application/json"
-},
-
-body:JSON.stringify({
-name,
-email,
-message,
-product: product?.name || "Artwork enquiry"
-})
-
+const res = await fetch(`${API_URL}/api/contact/send-email`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    name,
+    email,
+    message,
+    product: product?.name || "Artwork enquiry",
+  }),
 });
 
 const data = await res.json();

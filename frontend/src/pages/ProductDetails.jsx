@@ -13,6 +13,8 @@ const ADMIN_EMAIL = "triparnabhadra76@gmail.com";
 
 function ProductDetails(){
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 const { id } = useParams();
 const navigate = useNavigate();
 
@@ -40,7 +42,7 @@ if(!id) return;
 
 setLoading(true);
 
-fetch(`http://localhost:5000/api/products/${Number(id)}`)
+fetch(`${API_URL}/api/products/${Number(id)}`)
 .then(res=>res.json())
 
 .then(data=>{
@@ -55,10 +57,8 @@ setSelectedImage(p.image_url);
 
 }
 
-/* related products */
-
 return fetch(
-`http://localhost:5000/api/products?category=${Number(p.category_id)}`
+`${API_URL}/api/products?category=${Number(p.category_id)}`
 );
 
 })
@@ -96,7 +96,7 @@ const addToCollection = async ()=>{
 try{
 
 const response = await fetch(
-"http://localhost:5000/api/collection/add",
+`${API_URL}/api/collection/add`,
 {
 method:"POST",
 

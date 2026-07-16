@@ -5,7 +5,7 @@ function Admin() {
 /* ---------------- STATE ---------------- */
 
 const [editId,setEditId] = useState(null);
-
+const API_URL = import.meta.env.VITE_API_URL;
 const [products,setProducts] = useState([]);
 
 const [name,setName] = useState("");
@@ -27,7 +27,7 @@ const productsPerPage = 12;
 const fetchProducts = async () => {
 
 const res =
-await fetch("/api/products?limit=1000");
+await fetch(`${API_URL}/api/products?limit=1000`);
 
 const data =
 await res.json();
@@ -144,7 +144,7 @@ is_featured:false
 
 if(editId){
 
-await fetch(`/api/products/${editId}`,{
+await fetch(`${API_URL}/api/products/${editId}`,{
 
 method:"PUT",
 
@@ -165,7 +165,7 @@ alert("Product Updated");
 
 else{
 
-await fetch("/api/products",{
+await fetch(`${API_URL}/api/products`,{
 
 method:"POST",
 
@@ -209,7 +209,7 @@ return;
 
 }
 
-await fetch(`/api/products/${id}`,{
+await fetch(`${API_URL}/api/products/${id}`,{
 
 method:"DELETE",
 
@@ -520,7 +520,7 @@ const token = await getClerkToken();
 
 const newQty = Number(e.target.value);
 
-await fetch(`/api/products/${product.id}`,{
+await fetch(`${API_URL}/api/products/${product.id}`,{
 
 method:"PUT",
 

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import gmailIcon from "../assets/Gmail.png";
 const ADMIN_WHATSAPP = import.meta.env.VITE_ADMIN_WHATSAPP;
-const ADMIN_EMAIL = "triparnabhadra76@gmail.com";
+const ADMIN_EMAIL = "ritambhadra.asx1573@gmail.com";
 
 const ProductCard = ({ product }) => {
 

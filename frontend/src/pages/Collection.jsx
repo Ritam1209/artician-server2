@@ -11,7 +11,7 @@ FaStar
 } from "react-icons/fa";
 
 function Collection(){
-
+const API_URL = import.meta.env.VITE_API_URL;
 const navigate = useNavigate();
 const { user } = useUser();
 
@@ -59,8 +59,9 @@ useEffect(()=>{
 
 if(!user) return;
 
+
 fetch(
-`http://localhost:5000/api/collection/${
+`${API_URL}/api/collection/${
 user.primaryEmailAddress.emailAddress
 }`
 )
@@ -112,8 +113,7 @@ const removeItem = async(id)=>{
 if(!user) return;
 
 await fetch(
-
-"http://localhost:5000/api/collection/remove",
+`${API_URL}/api/collection/remove`,
 
 {
 

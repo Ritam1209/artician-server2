@@ -23,14 +23,14 @@ import sculpture12 from "../assets/sculpture12.jpg";
 import sculpture13 from "../assets/sculpture13.jpg";
 import sculpture14 from "../assets/sculpture14.jpg";
 import sculpture15 from "../assets/sculpture 15.jpg";
-
+const API_URL = import.meta.env.VITE_API_URL;
 const Sculpture = () => {
 
 const [products, setProducts] = useState([]);
 
 useEffect(() => {
 
-fetch("/api/products/?category=1")
+fetch(`${API_URL}/api/products?category=1`)
   .then(res => {
     if (!res.ok) throw new Error("API failed");
     return res.json();

@@ -3,11 +3,11 @@ import ProductCard from "../components/ProductCard";
 import InteriorSlider from "../components/InteriorSlider"; // your slider
 
 const InteriorDesign = () => {
-
+const API_URL = import.meta.env.VITE_API_URL;
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("/api/products/?category=3")
+  fetch(`${API_URL}/api/products?category=3`)
       .then(res => res.json())
       .then(data => setProducts(data.products))
       .catch(err => console.error(err));
