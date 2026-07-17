@@ -32578,3 +32578,80 @@ height:250px !important;
 }
 
 }
+
+
+/* ===========================
+   SMALL MOBILE DEVICES
+   =========================== */
+
+@media (max-width: 480px){
+
+  .hero-content h1,
+  .painting-hero h1,
+  .sculpture-hero h1{
+      font-size:30px !important;
+      line-height:1.2;
+  }
+
+  .hero-content p,
+  .painting-hero p,
+  .sculpture-hero p{
+      font-size:14px !important;
+  }
+
+  .products-grid,
+  .collections-grid,
+  .why-grid,
+  .category-grid{
+      grid-template-columns:1fr !important;
+      gap:18px !important;
+  }
+
+  .product-card{
+      width:100% !important;
+      max-width:100% !important;
+  }
+
+  .product-image,
+  .product-card img{
+      height:220px !important;
+  }
+
+  .navbar-container{
+      padding:12px 15px !important;
+  }
+
+  .footer{
+      padding:40px 16px !important;
+  }
+}
+
+
+/* ===========================
+   iPhone SE / Small Android
+   =========================== */
+
+@media (max-width: 360px){
+
+  .hero-content h1{
+      font-size:26px !important;
+  }
+
+  .hero-content p{
+      font-size:13px !important;
+  }
+
+  .product-image,
+  .product-card img{
+      height:200px !important;
+  }
+
+  .primary-btn,
+  .outline-btn,
+  .enquire-btn,
+  .whatsapp-btn,
+  .email-btn{
+      font-size:14px;
+      padding:10px;
+  }
+}
