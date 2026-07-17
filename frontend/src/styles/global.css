@@ -32059,3 +32059,240 @@ margin:auto !important;
 }
 
 }
+/* =====================================================
+   DESKTOP COLLECTION OVERLAY IMPROVEMENT
+   Add this at the END of the CSS file
+===================================================== */
+
+@media (min-width: 992px){
+
+    .collection-card{
+        overflow: hidden;
+    }
+
+    .collection-overlay{
+        padding: 24px 28px !important;
+
+        /* Lighter overlay */
+        background: linear-gradient(
+            to top,
+            rgba(0,0,0,0.58) 0%,
+            rgba(0,0,0,0.32) 45%,
+            rgba(0,0,0,0.05) 100%
+        ) !important;
+
+        transform: translateY(0) !important;
+    }
+
+    .collection-overlay h3{
+        font-size:30px;
+        margin-bottom:8px;
+        text-shadow:0 2px 8px rgba(0,0,0,.35);
+    }
+
+    .explore-btn{
+        opacity:1;
+    }
+}
+/* =====================================================
+   FINAL MOBILE RESPONSIVE FIX
+   Paste at the END of global.css
+===================================================== */
+
+@media (max-width:768px){
+
+/* ---------- GENERAL ---------- */
+
+body{
+    overflow-x:hidden;
+}
+
+section{
+    padding:50px 18px !important;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar{
+    height:70px !important;
+}
+
+.navbar-container{
+    padding:14px 18px !important;
+}
+
+.logo-link,
+.navbar-logo{
+    font-size:22px !important;
+    letter-spacing:2px;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    height:85vh !important;
+}
+
+.hero::before{
+    background:rgba(0,0,0,.45) !important;
+}
+
+.hero-content{
+    padding:0 18px;
+}
+
+.hero-content h1,
+.hero h1{
+    font-size:42px !important;
+    line-height:1.15;
+}
+
+.hero-content p{
+    font-size:17px !important;
+    line-height:1.7;
+    margin-top:18px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    gap:14px;
+}
+
+.hero-buttons a,
+.hero-buttons button,
+.primary-btn,
+.outline-btn{
+    width:100%;
+}
+
+/* ---------- SECTION TITLES ---------- */
+
+h2,
+.collections-title,
+.why-title,
+.slider-title{
+    font-size:36px !important;
+}
+
+/* ---------- COLLECTION GRID ---------- */
+
+.collections-grid{
+    grid-template-columns:1fr !important;
+    gap:24px !important;
+}
+
+.collection-card img{
+    height:280px !important;
+}
+
+.collection-overlay{
+    padding:22px !important;
+}
+
+/* ---------- CATEGORY GRID ---------- */
+
+.category-grid{
+    grid-template-columns:1fr !important;
+    gap:22px;
+}
+
+/* ---------- WHY GRID ---------- */
+
+.why-grid{
+    grid-template-columns:1fr !important;
+    gap:22px;
+}
+
+.why-card{
+    padding:28px 22px !important;
+}
+
+/* ---------- PRODUCTS ---------- */
+
+.products-section{
+    padding:30px 14px !important;
+}
+
+.products-grid{
+    grid-template-columns:1fr !important;
+    gap:24px !important;
+    padding:20px 0 !important;
+}
+
+.product-card{
+    width:100% !important;
+    max-width:100% !important;
+}
+
+.product-image{
+    height:260px !important;
+}
+
+.product-info{
+    padding:18px !important;
+}
+
+.product-title{
+    font-size:18px;
+}
+
+.price{
+    font-size:18px;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.action-buttons{
+    flex-direction:column;
+}
+
+.whatsapp-btn,
+.email-btn,
+.enquire-btn{
+    width:100%;
+}
+
+/* ---------- SLIDER ---------- */
+
+.painting-slider,
+.sculpture-slider{
+    padding:50px 18px !important;
+}
+
+.slider-card img,
+.sculpture-slider img{
+    height:300px !important;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer{
+    padding:50px 20px 25px;
+}
+
+.footer-container{
+    grid-template-columns:1fr !important;
+    gap:30px;
+    text-align:center;
+}
+
+/* ---------- CTA ---------- */
+
+.whatsapp-contact{
+    padding:60px 20px !important;
+}
+
+.whatsapp-contact h2{
+    font-size:34px !important;
+}
+
+.whatsapp-contact p{
+    font-size:16px;
+}
+
+.cta-whatsapp-btn{
+    width:100%;
+    min-width:0;
+}
+
+}
