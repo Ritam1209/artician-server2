@@ -32966,3 +32966,460 @@ justify-content:center;
 }
 
 }
+
+
+
+
+
+
+/* =========================================================
+   FINAL RESPONSIVE FIX
+   Paste at the END of global.css
+========================================================= */
+
+/* ---------- COLLECTION TITLE ---------- */
+
+.collection-hero h1,
+.collection-hero-content h1{
+    color:#111 !important;
+    text-shadow:none !important;
+}
+
+.collection-hero p,
+.collection-hero-content p{
+    color:#444 !important;
+}
+
+
+/* ---------- PRODUCT GRID ---------- */
+
+.products-section{
+    width:100%;
+    padding:60px 40px;
+    box-sizing:border-box;
+}
+
+.products-grid{
+    display:grid !important;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    width:100%;
+}
+
+
+/* ---------- PRODUCT CARD ---------- */
+
+.product-card{
+    width:100% !important;
+    max-width:none !important;
+    min-width:0 !important;
+
+    display:flex;
+    flex-direction:column;
+
+    background:#fff;
+    border-radius:14px;
+
+    overflow:hidden;
+
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-6px);
+}
+
+.product-image-wrapper{
+    width:100%;
+    overflow:hidden;
+}
+
+.product-image{
+    width:100%;
+    height:320px;
+    display:block;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-title{
+    font-size:22px;
+    font-weight:700;
+    line-height:1.4;
+    margin-bottom:12px;
+}
+
+.price{
+    font-size:26px;
+    font-weight:700;
+    color:#000;
+    white-space:nowrap;
+    margin-bottom:18px;
+}
+
+.action-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.whatsapp-btn,
+.email-btn{
+    flex:1;
+    height:46px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+}
+
+.gmail-icon{
+    width:18px;
+    height:18px;
+}
+
+
+/* ---------- PRODUCT DETAILS ---------- */
+
+.product-page{
+    width:100%;
+    overflow-x:hidden;
+}
+
+.product-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:start;
+}
+
+.gallery{
+    width:100%;
+}
+
+.info{
+    width:100%;
+}
+
+.main-image{
+    width:100%;
+    height:620px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.thumbnails{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+}
+
+.thumb{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    cursor:pointer;
+}
+
+.cta-row{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.cart-btn,
+.whatsapp-btn,
+.email-btn{
+    min-height:48px;
+}
+
+.product-highlights{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin-top:35px;
+}
+
+.highlight-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.highlight-item img{
+    width:38px;
+}
+
+
+/* ---------- RELATED PRODUCTS ---------- */
+
+.related-slider{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+}
+
+.related-card{
+    min-width:280px;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.related-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+
+/* ---------- QUICK VIEW ---------- */
+
+.quickview-modal{
+    width:90%;
+    max-width:1000px;
+    display:flex;
+}
+
+.quickview-image{
+    width:100%;
+    object-fit:cover;
+}
+
+
+/* =====================================================
+   TABLETS
+===================================================== */
+
+@media (max-width:992px){
+
+.product-layout{
+    grid-template-columns:1fr;
+}
+
+.main-image{
+    height:480px;
+}
+
+.products-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:768px){
+
+.products-section{
+    padding:25px 15px !important;
+}
+
+.products-grid{
+    grid-template-columns:1fr !important;
+    gap:22px;
+}
+
+.product-card{
+    width:100% !important;
+}
+
+.product-image{
+    height:260px !important;
+}
+
+.product-info{
+    padding:18px;
+}
+
+.product-title{
+    font-size:20px;
+}
+
+.price{
+    font-size:24px;
+}
+
+.action-buttons{
+    flex-direction:column;
+}
+
+.whatsapp-btn,
+.email-btn{
+    width:100%;
+}
+
+.product-page{
+    padding:20px 15px;
+}
+
+.breadcrumb{
+    font-size:14px;
+    flex-wrap:wrap;
+}
+
+.product-layout{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.main-image{
+    height:340px;
+}
+
+.thumbnails{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.thumb{
+    width:70px;
+    height:70px;
+}
+
+.info h1{
+    font-size:28px;
+}
+
+.description{
+    font-size:15px;
+    line-height:1.7;
+}
+
+.cta-row{
+    flex-direction:column;
+}
+
+.cart-btn,
+.whatsapp-btn,
+.email-btn,
+.wishlist{
+    width:100%;
+}
+
+.product-highlights{
+    grid-template-columns:1fr;
+}
+
+.related-card{
+    min-width:250px;
+}
+
+.related-card img{
+    height:220px;
+}
+
+.arrow{
+    display:none;
+}
+
+.quickview-modal{
+    width:95%;
+    flex-direction:column;
+}
+
+.quickview-image{
+    height:260px;
+}
+
+.quickview-content{
+    padding:20px;
+}
+
+.quickview-btn{
+    width:100%;
+}
+
+}
+
+
+/* =====================================================
+   SMALL PHONES
+===================================================== */
+
+@media (max-width:480px){
+
+.product-image{
+    height:230px !important;
+}
+
+.main-image{
+    height:290px;
+}
+
+.info h1{
+    font-size:24px;
+}
+
+.price{
+    font-size:22px;
+}
+
+.thumb{
+    width:60px;
+    height:60px;
+}
+
+.related-card{
+    min-width:220px;
+}
+
+.related-card img{
+    height:190px;
+}
+
+}
+
+
+/* =====================================================
+   360px DEVICES
+===================================================== */
+
+@media (max-width:360px){
+
+.products-section{
+    padding:18px 12px !important;
+}
+
+.product-image{
+    height:210px !important;
+}
+
+.main-image{
+    height:260px !important;
+}
+
+.product-title{
+    font-size:18px;
+}
+
+.info h1{
+    font-size:22px;
+}
+
+.price{
+    font-size:20px;
+}
+
+.whatsapp-btn,
+.email-btn,
+.cart-btn,
+.wishlist{
+    font-size:14px;
+}
+
+.related-card{
+    min-width:200px;
+}
+
+.related-card img{
+    height:170px;
+}
+
+}
