@@ -32655,3 +32655,212 @@ height:250px !important;
       padding:10px;
   }
 }
+
+
+/* =====================================================
+   360px MOBILE RESPONSIVE FIX
+   ADD THIS AT THE VERY END OF global.css
+===================================================== */
+
+@media only screen and (max-width:360px){
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden !important;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar{
+    min-height:70px !important;
+}
+
+.navbar-container{
+    padding:12px !important;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.logo-link,
+.navbar-logo{
+    font-size:22px !important;
+}
+
+.navbar-menu{
+    width:100%;
+    margin:0 !important;
+    gap:12px !important;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.navbar-menu a{
+    font-size:13px !important;
+}
+
+.navbar-auth{
+    width:100%;
+    justify-content:center;
+}
+
+/* ---------- HERO ---------- */
+
+.hero,
+.painting-hero,
+.sculpture-hero{
+    height:auto !important;
+    min-height:280px;
+    padding:110px 15px 60px !important;
+}
+
+.hero-content h1,
+.painting-hero h1,
+.sculpture-hero h1{
+    font-size:28px !important;
+    line-height:1.2;
+}
+
+.hero-content p,
+.painting-hero p,
+.sculpture-hero p{
+    font-size:14px !important;
+    line-height:1.6;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    gap:12px;
+}
+
+.primary-btn,
+.outline-btn{
+    width:100%;
+}
+
+/* ---------- COLLECTION ---------- */
+
+.collections-section{
+    padding:40px 15px !important;
+}
+
+.collections-title{
+    font-size:30px !important;
+}
+
+.collections-grid{
+    grid-template-columns:1fr !important;
+    gap:18px !important;
+}
+
+.collection-card img{
+    height:230px !important;
+}
+
+.collection-overlay{
+    padding:18px !important;
+}
+
+.collection-overlay h3{
+    font-size:22px !important;
+}
+
+/* ---------- PRODUCTS ---------- */
+
+.products-section{
+    padding:25px 12px !important;
+}
+
+.products-grid{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:18px !important;
+    padding:0 !important;
+}
+
+.product-card{
+    width:100% !important;
+    max-width:100% !important;
+}
+
+.product-image,
+.product-card img{
+    width:100%;
+    height:220px !important;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:16px !important;
+}
+
+.product-title,
+.product-info h3{
+    font-size:17px !important;
+}
+
+.price{
+    font-size:18px !important;
+}
+
+.action-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.whatsapp-btn,
+.email-btn,
+.enquire-btn{
+    width:100% !important;
+}
+
+/* ---------- SLIDER ---------- */
+
+.painting-slider,
+.sculpture-slider{
+    padding:40px 15px !important;
+}
+
+.slider-title{
+    font-size:28px !important;
+}
+
+.slider-card img,
+.sculpture-slider img{
+    height:220px !important;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer{
+    padding:40px 18px 25px !important;
+}
+
+.footer-container{
+    grid-template-columns:1fr !important;
+    text-align:center;
+    gap:25px;
+}
+
+.footer-logo{
+    font-size:22px !important;
+}
+
+/* ---------- CTA ---------- */
+
+.whatsapp-contact{
+    padding:50px 18px !important;
+}
+
+.whatsapp-contact h2{
+    font-size:28px !important;
+}
+
+.cta-whatsapp-btn{
+    width:100%;
+    min-width:0;
+}
+
+}
