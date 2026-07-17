@@ -451,3 +451,131 @@
 }
 
 }
+
+
+
+/* =========================================================
+   COLLECTION PAGE FINAL FIX
+   PASTE AT THE VERY END OF global.css
+========================================================= */
+
+/* PAGE */
+
+.collection-page{
+    position:relative;
+    background:#0b0b0b !important;
+    color:#fff !important;
+    overflow-x:hidden;
+}
+
+/* Reduce dark overlay */
+
+.collection-page::before,
+.collection-page::after,
+.collection-hero::before,
+.collection-hero::after{
+    background:rgba(0,0,0,0.25) !important;
+    opacity:1 !important;
+}
+
+/* TITLE */
+
+.collection-page h1,
+.collection-page .collection-title,
+.collection-page .hero-title,
+.collection-page .collection-hero h1{
+    color:#ffffff !important;
+    text-shadow:none !important;
+}
+
+/* Subtitle */
+
+.collection-page p,
+.collection-page .hero-subtitle{
+    color:#e5e5e5 !important;
+}
+
+/* Filter Buttons */
+
+.collection-page .filter-btn{
+    color:#ffffff !important;
+    border:1px solid rgba(255,255,255,.25) !important;
+    background:transparent !important;
+}
+
+.collection-page .filter-btn.active{
+    background:#ffffff !important;
+    color:#000000 !important;
+}
+
+/* Cards */
+
+.collection-page .product-card{
+    background:#111 !important;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.collection-page .product-title{
+    color:#ffffff !important;
+}
+
+.collection-page .price{
+    color:#ffffff !important;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.collection-page{
+    padding:20px 15px !important;
+}
+
+.collection-page h1{
+    font-size:34px !important;
+    color:#ffffff !important;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.collection-page .filter-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.collection-page .filter-btn{
+    padding:12px 22px;
+    font-size:15px;
+}
+
+}
+
+@media (max-width:480px){
+
+.collection-page h1{
+    font-size:28px !important;
+    color:#ffffff !important;
+}
+
+.collection-page .filter-btn{
+    width:140px;
+}
+
+}
+
+@media (max-width:360px){
+
+.collection-page h1{
+    font-size:24px !important;
+    color:#ffffff !important;
+}
+
+.collection-page .filter-btn{
+    width:125px;
+    font-size:14px;
+}
+
+}
