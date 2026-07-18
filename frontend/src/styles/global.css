@@ -33423,3 +33423,354 @@ justify-content:center;
 }
 
 }
+
+
+
+
+
+/* =====================================================
+   360px DEVICES
+===================================================== */
+
+@media (max-width:360px){
+
+.products-section{
+    padding:18px 12px !important;
+}
+
+.product-image{
+    height:210px !important;
+}
+
+.main-image{
+    height:260px !important;
+}
+
+.product-title{
+    font-size:18px;
+}
+
+.info h1{
+    font-size:22px;
+}
+
+.price{
+    font-size:20px;
+}
+
+.whatsapp-btn,
+.email-btn,
+.cart-btn,
+.wishlist{
+    font-size:14px;
+}
+
+.related-card{
+    min-width:200px;
+}
+
+.related-card img{
+    height:170px;
+}
+
+}
+
+
+
+
+
+/* PAGE */
+
+.collection-page{
+    position:relative;
+    background:#0b0b0b !important;
+    color:#fff !important;
+    overflow-x:hidden;
+}
+
+/* Reduce dark overlay */
+
+.collection-page::before,
+.collection-page::after,
+.collection-hero::before,
+.collection-hero::after{
+    background:rgba(0,0,0,0.25) !important;
+    opacity:1 !important;
+}
+
+/* TITLE */
+
+.collection-page h1,
+.collection-page .collection-title,
+.collection-page .hero-title,
+.collection-page .collection-hero h1{
+    color:#ffffff !important;
+    text-shadow:none !important;
+}
+
+/* Subtitle */
+
+.collection-page p,
+.collection-page .hero-subtitle{
+    color:#e5e5e5 !important;
+}
+
+/* Filter Buttons */
+
+.collection-page .filter-btn{
+    color:#ffffff !important;
+    border:1px solid rgba(255,255,255,.25) !important;
+    background:transparent !important;
+}
+
+.collection-page .filter-btn.active{
+    background:#ffffff !important;
+    color:#000000 !important;
+}
+
+/* Cards */
+
+.collection-page .product-card{
+    background:#111 !important;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.collection-page .product-title{
+    color:#ffffff !important;
+}
+
+.collection-page .price{
+    color:#ffffff !important;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.collection-page{
+    padding:20px 15px !important;
+}
+
+.collection-page h1{
+    font-size:34px !important;
+    color:#ffffff !important;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.collection-page .filter-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.collection-page .filter-btn{
+    padding:12px 22px;
+    font-size:15px;
+}
+
+}
+
+@media (max-width:480px){
+
+.collection-page h1{
+    font-size:28px !important;
+    color:#ffffff !important;
+}
+
+
+   /* =====================================================
+   COLLECTION PAGE - MOBILE ONLY FIX
+   ===================================================== */
+
+@media (max-width:768px){
+
+/* Center filter buttons only on mobile */
+
+.collection-page .filter-container,
+.collection-page .category-buttons,
+.collection-page .category-filter,
+.collection-page .filter-buttons{
+
+    display:flex !important;
+    flex-wrap:wrap;
+    justify-content:center !important;
+    align-items:center !important;
+    gap:14px !important;
+    width:100%;
+    margin:25px auto !important;
+
+}
+
+/* Buttons */
+
+.collection-page .filter-btn,
+.collection-page .category-btn{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* Remove extra black overlay under cards */
+
+.collection-page .product-card{
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15) !important;
+    background:#111 !important;
+
+}
+
+.collection-page .product-card::before,
+.collection-page .product-card::after,
+.collection-page .product-image-wrapper::before,
+.collection-page .product-image-wrapper::after{
+
+    display:none !important;
+    content:none !important;
+
+}
+
+.collection-page .product-info{
+
+    background:#111 !important;
+    background-image:none !important;
+
+}
+
+.collection-page .product-image{
+
+    height:250px !important;
+    object-fit:cover;
+
+}
+
+}
+
+/* 360px */
+
+@media (max-width:360px){
+
+.collection-page .filter-container,
+.collection-page .category-buttons,
+.collection-page .category-filter,
+.collection-page .filter-buttons{
+
+    gap:12px !important;
+
+}
+
+.collection-page .filter-btn,
+.collection-page .category-btn{
+
+    width:135px;
+
+}
+
+.collection-page .product-image{
+
+    height:220px !important;
+
+}
+
+}
+
+.collection-page .filter-btn{
+    width:140px;
+}
+
+}
+
+@media (max-width:360px){
+
+.collection-page h1{
+    font-size:24px !important;
+    color:#ffffff !important;
+}
+
+.collection-page .filter-btn{
+    width:125px;
+    font-size:14px;
+}
+
+}
+
+
+
+
+/* =====================================================
+   COLLECTION FILTER - MOBILE ONLY 
+===================================================== */
+
+@media only screen and (max-width:768px){
+
+.collection-page .collection-wrapper{
+    width:100% !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+}
+
+.collection-page .collection-title{
+    width:100% !important;
+    text-align:center !important;
+    margin-bottom:24px !important;
+}
+
+.collection-page .collection-filters{
+    width:100% !important;
+    display:flex !important;
+    flex-wrap:wrap !important;
+    justify-content:center !important;
+    align-items:center !important;
+    gap:14px !important;
+    margin:0 auto 30px auto !important;
+    padding:0 10px !important;
+}
+
+.collection-page .collection-filters .filter-btn{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    flex:0 0 calc(50% - 10px) !important;
+    max-width:150px !important;
+    min-width:130px !important;
+
+    height:48px !important;
+
+    margin:0 !important;
+    padding:0 12px !important;
+
+    text-align:center !important;
+}
+
+}
+
+/* ===========================
+   360px DEVICES
+=========================== */
+
+@media only screen and (max-width:360px){
+
+.collection-page .collection-filters{
+    gap:12px !important;
+}
+
+.collection-page .collection-filters .filter-btn{
+
+    flex:0 0 calc(50% - 8px) !important;
+
+    max-width:135px !important;
+    min-width:135px !important;
+
+    height:46px !important;
+
+    font-size:14px !important;
+
+}
+
+}
