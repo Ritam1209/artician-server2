@@ -677,3 +677,80 @@
 }
 
 }
+
+
+
+
+/* =====================================================
+   COLLECTION FILTER - MOBILE ONLY (NO JSX CHANGE)
+===================================================== */
+
+@media only screen and (max-width:768px){
+
+.collection-page .collection-wrapper{
+    width:100% !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+}
+
+.collection-page .collection-title{
+    width:100% !important;
+    text-align:center !important;
+    margin-bottom:24px !important;
+}
+
+.collection-page .collection-filters{
+    width:100% !important;
+    display:flex !important;
+    flex-wrap:wrap !important;
+    justify-content:center !important;
+    align-items:center !important;
+    gap:14px !important;
+    margin:0 auto 30px auto !important;
+    padding:0 10px !important;
+}
+
+.collection-page .collection-filters .filter-btn{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    flex:0 0 calc(50% - 10px) !important;
+    max-width:150px !important;
+    min-width:130px !important;
+
+    height:48px !important;
+
+    margin:0 !important;
+    padding:0 12px !important;
+
+    text-align:center !important;
+}
+
+}
+
+/* ===========================
+   360px DEVICES
+=========================== */
+
+@media only screen and (max-width:360px){
+
+.collection-page .collection-filters{
+    gap:12px !important;
+}
+
+.collection-page .collection-filters .filter-btn{
+
+    flex:0 0 calc(50% - 8px) !important;
+
+    max-width:135px !important;
+    min-width:135px !important;
+
+    height:46px !important;
+
+    font-size:14px !important;
+
+}
+
+}
