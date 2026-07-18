@@ -754,3 +754,129 @@
 }
 
 }
+
+
+/* Profile Section */
+.profile-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:20px;
+    margin-bottom:15px;
+    width:100%;
+}
+
+/* Profile Image */
+.profile-image{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #c8a63d;
+    box-shadow:0 4px 12px rgba(0,0,0,.35);
+    display:block;
+}
+/* =========================================
+   MOBILE HERO FIX FOR SCULPTURE PAGE
+   Paste at the END of Sculpture.css
+========================================= */
+
+@media screen and (max-width: 768px){
+
+  .sculpture-hero{
+      min-height: 72vh !important;
+      height: auto !important;
+      padding: 110px 20px 70px !important;
+
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+
+      overflow:hidden;
+      box-sizing:border-box;
+  }
+
+  .sculpture-hero::before{
+      background:rgba(0,0,0,.45) !important;
+  }
+
+  .sculpture-hero-content{
+      width:100%;
+      max-width:100%;
+      padding:0 10px;
+      z-index:2;
+  }
+
+  .sculpture-hero h1{
+      font-size:3.2rem !important;
+      line-height:1.08 !important;
+      margin-bottom:18px !important;
+      word-break:break-word;
+  }
+
+  .sculpture-hero .divider{
+      width:90px;
+      margin:20px auto;
+  }
+
+  .sculpture-hero p{
+      font-size:1.1rem !important;
+      line-height:1.8 !important;
+      max-width:95%;
+      margin:0 auto;
+  }
+
+}
+
+
+/* Extra Small Phones */
+
+@media screen and (max-width:480px){
+
+  .sculpture-hero{
+      min-height:75vh !important;
+      padding:100px 18px 60px !important;
+  }
+
+  .sculpture-hero h1{
+      font-size:2.8rem !important;
+      line-height:1.1 !important;
+  }
+
+  .sculpture-hero p{
+      font-size:1rem !important;
+      line-height:1.7 !important;
+      width:100%;
+  }
+
+}
+
+
+/* 360px Devices */
+
+@media screen and (max-width:360px){
+
+  .sculpture-hero{
+      min-height:78vh !important;
+      padding:95px 15px 55px !important;
+  }
+
+  .sculpture-hero h1{
+      font-size:2.4rem !important;
+      line-height:1.1 !important;
+  }
+
+  .sculpture-hero p{
+      font-size:.95rem !important;
+      line-height:1.6 !important;
+  }
+
+  .sculpture-hero .divider{
+      width:75px;
+  }
+
+}
+
+
